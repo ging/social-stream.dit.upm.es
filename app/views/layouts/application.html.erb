@@ -1,14 +1,109 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>SocialStreamDitUpmEs</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <title>Social Stream</title>
+    <meta name="description" content="A framework for building distributed social network websites" />
+    <meta name="keywords" content="social network framework, ruby on rails, social software, open source, ruby, rails, core, build, css3" />
+    <meta name="Social-Stream" content="whit love for you" />
+    <link rel="shortcut icon" href="/images/favicon.ico"> 
+    <meta name="robots" content="index, follow"/>
 
-<%= yield %>
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/social_stream.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/style_alt.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/demo.css" />
 
-</body>
+    <%= javascript_include_tag "application" %>
+
+    <noscript>
+      <style>
+      .step {
+        width: 100%;
+        position: relative;
+      }
+      .step:not(.active) {
+        opacity: 1;
+        filter: alpha(opacity=99);
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=99)";
+      }
+      .step:not(.active) a.jms-link{
+        opacity: 1;
+        margin-top: 40px;
+      }
+      </style>
+    </noscript>
+  </head>
+
+  <body>
+    <header id="inner-header" class="clearfix">
+      <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container-fluid nav-container">
+            <nav role="navigation">
+              <a class="brand" id="logo" href="index.html">
+                <div class="">
+                  <img src="/images/logo-header.png">
+                </div>
+                <div class="hidden-tablet hidden-phone">
+                  <img src="/images/brand-header.png">
+                </div>
+              </a>
+              
+              <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+              </a>
+              
+              <div class="nav-collapse">
+                <ul class="nav">
+                  <li class="active">
+                    <%= link_to "Home", root_path %>
+                  </li>
+                  <li class="">
+                    <a href="/blog">Blog</a>
+                  </li>
+                  <li class="">
+                    <%= link_to "Demo", 'http://demo-social-stream.dit.upm.es/', target: '_blank' %>
+                  </li>
+                  <li class="">
+                    <%= link_to "Community", community_path %>
+                  </li>
+                  <li class="">
+                    <%= link_to "Get started", started_path %>
+                  </li>
+                </ul>
+              </div>
+              
+            </nav>              
+          </div>
+        </div>
+      </div>
+    </header> <!-- end #inner-header -->
+
+    <div class="container-fluid">
+      <%= yield %>
+   </div>
+
+    <footer class="footer">
+      <%= Time.now.year %> &copy; 
+      <a href="http://www.social-stream.dit.upm.es">
+        Social Stream
+      </a>
+      -
+      <a href="http://www.dit.upm.es/">
+        DIT
+      </a>
+      -
+      <a href="http://www.etsit.upm.es/">
+        ETSIT
+      </a>
+      -
+      <a href="http://www.upm.es/">
+        UPM
+      </a>
+    </footer>
+  </body>
 </html>

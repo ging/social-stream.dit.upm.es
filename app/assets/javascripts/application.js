@@ -12,4 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require modernizr.custom.48780
+//= require jmpress
+//= require jquery.jmslideshow
+//= require bootstrap
 //= require_tree .

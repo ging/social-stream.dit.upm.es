@@ -1,4 +1,7 @@
 SocialStreamDitUpmEs::Application.routes.draw do
+  match "/community" => "frontpage#community", :as => :community
+  match "/started"   => "frontpage#started",   :as => :started
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -48,7 +51,7 @@ SocialStreamDitUpmEs::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'frontpage#index'
 
   # See how all your routes lay out with "rake routes"
 
