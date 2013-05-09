@@ -1,16 +1,16 @@
 
 body {
   font-family: "OpenSans", sans-serif;
-  color:#333;
-  background-color:#f9f9f9;
-  text-rendering: optimizeLegibility;
+  color:#333 !important;
+  background-color:#f9f9f9 !important;
+  text-rendering: optimizeLegibility !important;
 }
 
 .navbar .brand{
-  padding: 0px;
-  display: inline;
-  width: 185px;
-  height: 36px;
+  padding: 0px !important;
+  display: inline !important;
+  width: 185px !important;
+  height: 36px !important;
 }
 
 .navbar-inner {
@@ -19,12 +19,12 @@ body {
 }
 
 .navbar .nav > li > a {
-  text-shadow: none;
-  color: #999;
+  text-shadow: none !important;
+  color: #999 !important;
 }
 
 .navbar .nav > li > a:hover{
-  color: #f9f9f9;
+  color: #f9f9f9 !important;
 }
 
 header .navbar-inner ul.nav > li > a{
@@ -32,59 +32,59 @@ header .navbar-inner ul.nav > li > a{
 }
 
 header .navbar-inner ul.nav {
-  display: inline-block;
+  display: inline-block !important;
 }
 
 .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
-  background-color: transparent;
-  color: #f9f9f9;
-  box-shadow: none;
+  background-color: transparent !important;
+  color: #f9f9f9 !important;
+  box-shadow: none !important;
 }
 
 .navbar-fixed-top, .navbar-fixed-bottom {
-  z-index: 2030;
+  z-index: 2030 !important;
 }
 
 .navbar .btn-navbar{
-  background-image: linear-gradient(to bottom, #666, #444);
-  border: none;
+  background-image: linear-gradient(to bottom, #666, #444) !important;
+  border: none !important;
 }
 
 .navbar .btn-navbar:hover{
-  background-color: #444
+  background-color: #444 !important;
 }
 
 .nav-collapse .collapse{
-  display: block;
+  display: block !important;
 }
 
 .nav-collapse .nav > li > a:hover{
-  background-color: #555;
+  background-color: #555 !important;
 }
 .nav-collapse {
-  display: block;
-  height: 0px;
-  float: left;
-  width: 50%;
+  display: block !important;
+  height: 0px !important;
+  float: left !important;
+  width: 50% !important;
 }
 
 .nav-collapse .nav {
-  width: 100%;
+  width: 100% !important;
 }
 
 .container-fluid{
-  margin: 0 auto;
-  max-width: 970px;
+  margin: 0 auto !important;
+  max-width: 970px !important;
 }
 
 .page-header{
-  margin-bottom: 8px;
+  margin-bottom: 8px !important;
 }
 
 .page-header h1{
-  margin-bottom: 1px;
+  margin-bottom: 1px !important;
 }
 
 header .meta{
-  color: #777;
+  color: #777 !important;
 }
