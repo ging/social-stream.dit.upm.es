@@ -1,0 +1,90 @@
+
+body {
+  font-family: "OpenSans", sans-serif;
+  color:#333;
+  background-color:#f9f9f9;
+  text-rendering: optimizeLegibility;
+}
+
+.navbar .brand{
+  padding: 0px;
+  display: inline;
+  width: 185px;
+  height: 36px;
+}
+
+.navbar-inner {
+  background-image: none;
+  background-color: #222;
+}
+
+.navbar .nav > li > a {
+  text-shadow: none;
+  color: #999;
+}
+
+.navbar .nav > li > a:hover{
+  color: #f9f9f9;
+}
+
+header .navbar-inner ul.nav > li > a{
+  padding: 10px 15px 10px !important;
+}
+
+header .navbar-inner ul.nav {
+  display: inline-block;
+}
+
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+  background-color: transparent;
+  color: #f9f9f9;
+  box-shadow: none;
+}
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+  z-index: 2030;
+}
+
+.navbar .btn-navbar{
+  background-image: linear-gradient(to bottom, #666, #444);
+  border: none;
+}
+
+.navbar .btn-navbar:hover{
+  background-color: #444
+}
+
+.nav-collapse .collapse{
+  display: block;
+}
+
+.nav-collapse .nav > li > a:hover{
+  background-color: #555;
+}
+.nav-collapse {
+  display: block;
+  height: 0px;
+  float: left;
+  width: 50%;
+}
+
+.nav-collapse .nav {
+  width: 100%;
+}
+
+.container-fluid{
+  margin: 0 auto;
+  max-width: 970px;
+}
+
+.page-header{
+  margin-bottom: 8px;
+}
+
+.page-header h1{
+  margin-bottom: 1px;
+}
+
+header .meta{
+  color: #777;
+}

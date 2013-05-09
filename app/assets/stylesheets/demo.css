@@ -1,10 +1,10 @@
-.logo-nav{
+.logo{
   display: inline;
 }
 .brand-nav{
   display: inline-block;
 }
-/******** INDEX **********/
+/******** HOME **********/
 
 .carousel{
   margin-top: 50px;
@@ -141,18 +141,41 @@ body {
 }
 
 .navbar .brand{
-  padding: 10px 20px 10px;
+  padding: 0px;
+  display: inline;
+  width: 185px;
+  height: 36px;
+}
+.brand .logo{
+  display: inline;
+  width: 33px;
+  height: 36px;
+  background-image: url("/images/logo-header.png");
+}
+.brand .logo:hover{
+  background-image: url("/images/logo-header-hover.png");
+  .brand .logo-text:hover{
+    background-image: url("/images/brand-header-hover.png");
+  }
+}
+
+.brand .logo-text{
+  display: inline-block;
+  width: 150px;
+  height: 36px;
+  background-image: url("/images/brand-header.png");
+}
+
+.brand .logo-text:hover{
+  background-image: url("/images/band-header-hover.png");
+  .brand .logo:hover{
+    background-image: url("/images/logo-header-hover.png");
+  }
 }
 
 .navbar-inner {
   background-image: none;
   background-color: #222;
-}
-
-.navbar .brand {
-  text-shadow: none;
-  color: #999;
-  display: inline;
 }
 
 .navbar .nav > li > a {
@@ -232,55 +255,7 @@ header .meta{
   color: #444;
 }
 
-.btn-primary{
-  padding: 4px 12px;
-  margin-bottom: 0;
-  line-height: $baseLineHeight;
-  vertical-align: middle;
-  cursor: pointer;
-  background-color: #fff;
-  color: #049CDB;
-  border: 1px solid #049CDB;
-  *border: 0;
-  background-image: none;
-  box-shadow(inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05))
-  transition(background 1s, color, 1s)
-}
 
-.btn-primary:hover{
-  border: 1px solid #fff;
-  background-color: #049CDB !important;
-  color: #fff;
-}
-
-.btn-primary:hover .caret{
-  transition (border 1s, color, 1s);
-  border-top-color: #fff;
-  border-bottom-color: #fff;
-}
-
-.btn-primary .caret{
-  border-top-color: #049CDB;
-  border-bottom-color: #049CDB;
-}
-
-.btn-primary .caret:hover{
-  border-top-color: #fff;
-  border-bottom-color: #fff;
-}
-
-.btn-primary .active{
-  border: 1px solid #fff;
-  background-color: #049CDB !important;
-  color: #fff;
-}
-
-.btn-primary .disabled{ 
-  cursor: default;
-  opacity: 85;
-  background-color: #049CDB;
-  color: #fff;
-}
 
 
 

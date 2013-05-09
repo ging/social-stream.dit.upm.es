@@ -1,0 +1,44 @@
+.sidebar-rss {
+  border-left: 1px solid #049CDB;
+  padding-left: 11px;
+  width: 22%;
+  float: right;
+}
+
+.twtr-doc{
+  width: auto !important;
+}
+
+.twtr-widget{
+  font-family: "OpenSans", sans-serif !important;
+}
+
+.widget widget_google_stats .widgettitle{
+  margin-bottom: -10px;
+}
+
+#twtr-widget-1 .twtr-tweet a {
+  color: #333 !important;
+  font-size: 13px;
+}
+
+#twtr-widget-1 .twtr-tweet a:hover {
+  color: #049CDB !important;
+  text-decoration: none !important;
+}
+
+.twtr-join-conv{
+  background-color: #fff;
+  border-radius: 3px;
+  font-size: 15px;
+  padding: 2px 11px 5px; 
+}
+
+.twtr-widget .twtr-tweet {
+  border-bottom: 2px solid #fff !important;
+  margin-top: 6px;
+}
+
+.rss_text{
+  font-style: italic;
+}
