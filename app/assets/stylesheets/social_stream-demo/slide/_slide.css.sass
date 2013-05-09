@@ -7,25 +7,25 @@
 .jms-wrapper
   min-height: 281px
   background-color: #fff
-  @include box-shadow (0 2px 6px rgba(0, 0, 0, .2))
+  /*@include box-shadow (0 2px 6px rgba(0, 0, 0, .2))*/
   -webkit-background-clip: padding
   -moz-background-clip: padding     
   background-clip: padding-box
   border-top: 10px solid #fff
   border-bottom: 10px solid #fff
   outline: none
-  @include transition (background-color 1s linear)
+  /*@include transition (background-color 1s linear)*/
 
 
 .step
   width: 1220px
   height: 420px
   display: block
-  @include transition (opacity 1s)
+  /*@include transition (opacity 1s)*/
 
 
 .step:not(.active)
-  @include opacity (0)
+  /*@include opacity (0)*/
 
 .jms-content
   margin: 0px 370px 0px 20px
@@ -79,17 +79,17 @@
     background: #ddd
     margin: 3px
     cursor: pointer
-    @include box-shadow(1px 1px 1px rgba(0,0,0,0.1) inset, 1px 1px 1px rgba(255,255,255,0.3))
+    /*@include box-shadow(1px 1px 1px rgba(0,0,0,0.1) inset, 1px 1px 1px rgba(255,255,255,0.3))*/
    
 
-   .jms-dots-current:after
+    .jms-dots-current:after
       content: ''
       width: 8px
       height: 8px
       position: absolute
       top: 2px
       left: 2px
-      @include border-radius (50%)
+      /*@include border-radius (50%)*/
       background: #049CDB
 
 
@@ -108,7 +108,7 @@
     width: 30px
     cursor: pointer
     z-index: 2000
-    @include box-shadow  (1px 1px 4px rgba(0, 0, 0, 0.1))
+    /*@include box-shadow  (1px 1px 4px rgba(0, 0, 0, 0.1))*/
 
 
     .jms-arrows-prev
@@ -119,12 +119,12 @@
     .jms-arrows-next
       background: #fff url(../images/arrow_right.png) no-repeat 50% 50%
       right: 0px
-      @include border-radius (2px)
+      /*@include border-radius (2px)*/
 
 /* Not supported style */
 .jms-wrapper
   .not-supported
-    background-color: rgba(227, 216, 268, 1)
+    background-color: rgba(227, 216, 255, 1)
     &:after
       content: 'The slideshow functionality is not supported on your device.'
       padding: 0px 0px 30px 0px
@@ -134,13 +134,13 @@
     .step
       display: none
       position: relative
-      @include opacity (1)
+      /*@include opacity (1)*/
       margin: 20px auto
 
       &:first-of-type
         display: block
  
       &:not(.active) 
-        a.jms-link{
-          @include opacity (1)
+        a.jms-link
+          /*@include opacity (1)*/
           margin-top: 40px
