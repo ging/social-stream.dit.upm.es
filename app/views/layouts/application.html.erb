@@ -54,7 +54,7 @@
 
             <div class="nav-collapse">
               <ul class="nav">
-                <li class="active">
+                <li class="<%= current_page?(action: 'index') && 'active' %>">
                   <%= link_to "Home", root_path %>
                 </li>
                 <li class="">
@@ -63,10 +63,10 @@
                 <li class="">
                   <%= link_to "Demo", 'http://demo-social-stream.dit.upm.es/', target: '_blank' %>
                 </li>
-                <li class="">
+                <li class="<%= current_page?(action: 'community') && 'active' %>">
                   <%= link_to "Community", community_path %>
                 </li>
-                <li class="">
+                <li class="<%= current_page?(action: 'started') && 'active' %>">
                   <%= link_to "Get started", started_path %>
                 </li>
               </ul>
