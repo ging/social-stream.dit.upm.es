@@ -1,122 +1,125 @@
+<div id="start">
+  <div class="start-menu bs-docs-sidebar affix">
+    <ul class="nav nav-list bs-docs-sidenav affix-top">
+      <li><a href="#rails"><i class="icon-chevron-right"></i> 1. Get Started with Rails</a></li>
+      <li><a href="#components"><i class="icon-chevron-right"></i> 2. Social Stream components</a></li>
+      <li><a href="#install"><i class="icon-chevron-right"></i> 3. Install Social Stream</a></li>
+      <li><a href="#customize"><i class="icon-chevron-right"></i> 4. Customize your application</a></li>
+      <li><a href="#more"><i class="icon-chevron-right"></i> 5. More</a></li>
+    </ul>
+  </div>
 
-    <div id="start">
-      <div class="start-menu bs-docs-sidebar affix">
-        <ul class="nav nav-list bs-docs-sidenav affix-top">
-          <li><a href="#rails"><i class="icon-chevron-right"></i> 1. Get Started with Rails</a></li>
-          <li><a href="#components"><i class="icon-chevron-right"></i> 2. Social Stream components</a></li>
-          <li><a href="#install"><i class="icon-chevron-right"></i> 3. Install Social Stream</a></li>
-          <li><a href="#customize"><i class="icon-chevron-right"></i> 4. Customize your application</a></li>
-          <li><a href="#more"><i class="icon-chevron-right"></i> 5. More</a></li>
-        </ul>
-      </div>
-      <div class="content">    
-        <section id="rails" class="row get-started-with-rails">
-          <header>
-            <h1>
-              1
-            </h1>
-            <h2>
-              Get Started with Rails
-            </h2>
-          </header>
-            
-          <p>Social Stream is an engine for <a href="http://rubyonrails.org/">Ruby on Rails</a>, the popular web development framework. This means you need to know Rails before developing with Social Stream. There is a nice guide on <a href="http://guides.rubyonrails.org/getting_started.html">Getting Started with Rails</a> that you should read first.</p>
-
-          <p>Once you have created your Rails application, you can add the Social Stream engine. However, Social Stream is quite modular, in order to offer only what you need in your application. Before installing Social Stream, you have to decide which modules you will need in your new social network.</p>
-        </section>
-
-        <section id="components" class="row components">
-          <div class="components">
-            <header>
-              <h1>
-                2
-              </h1>
-              <h2>
-                Social Stream's components
-              </h2>  
-            </header>
-          </div>
-
-          <p>Social Stream is distributed in components to provide developers with the precise functionality they need for their social network website. Every component is packaged as a <a href="http://rubygems.org/">Ruby Gem</a> which is the standard packaging in Ruby. Ruby on Rails itself is also packaged as a gem.</p>
+  <div class="content">
+    <section id="rails" class="row get-started-with-rails">
+      <header>
+        <h1>
+          1
+        </h1>
+        <h2>
+          Get Started with Rails
+        </h2>
+      </header>
         
-          <ul class="nav nav-tabs" id="components-tab">
-            <li class="active"><a href="#base" data-toggle="tab">Base</a></li>
-            <li><a href="#documents" data-toggle="tab">Documents</a></li>
-            <li><a href="#events" data-toggle="tab">Events</a></li>
-            <li><a href="#linkser" data-toggle="tab">Linkser</a></li>
-            <li><a href="#presence" data-toggle="tab">Presence</a></li>
-            <li><a href="#ostatus" data-toggle="tab">OStatus</a></li>
-            <li><a href="#oauth2" data-toggle="tab">OAuth2 Server</a></li>
-          </ul>
-     
-          <div class="tab-content">
-            <div class="tab-pane active" id="base">The <code>social_stream-base</code> gem provides applications with the core social network functionality. It supports users and groups, profile pages, activity streams, private messages and notifications, text posts and comments. Everything you need to start your social network</div>
-            <div class="tab-pane" id="documents">The <code>social_stream-documents</code> gem adds the core support for file uploads. Besides, it adds some nice features to special files, such as image thumbnails, audio and video with an HTML5 player.</div>
-            <div class="tab-pane" id="events"><code>social_stream-events</code> provides your social network with supports for scheduled events with a nice full-screen calendar.</div>
-            <div class="tab-pane" id="linkser"><code>social_stream-linkser</code> adds advanced management of links to other webpages. These are quite popular in leisure social networks where people share a lot of Youtube videos, for instance.</div>
-            <div class="tab-pane" id="presence">The <code>social_stream-presence</code> gem provides your social network with chat and videoconference support.</div>
-            <div class="tab-pane" id="ostatus"><code>social_stream-ostatus</code> lets your social network website federate with other social networks using the popular <a href="http://www.w3.org/community/ostatus/">OStatus</a> protocol</div>
-            <div class="tab-pane" id="oauth2">The <code>social_stream-oauth2_server</code> gem turns your site into an <a href="http://oauth.net/2/">OAuth2</a> provider, letting third party applications to access authentication and protected services from your social network</div>
-          </div>
-        </section>
+      <p>Social Stream is an engine for <a href="http://rubyonrails.org/">Ruby on Rails</a>, the popular web development framework. You need to know Rails before developing with Social Stream. There is a nice guide at <a href="http://guides.rubyonrails.org/getting_started.html">Getting Started with Rails</a> that you should read first.</p>
 
-        <section id="install" class="row install-social-stream">
-          <header>
-            <h1>
-              3
-            </h1>
-            <h2>
-              Install Social Stream
-            </h2>
-          </header>
+      <p>Once you have created your Rails application, you can add the Social Stream engine. Social Stream is quite modular, you can use only the functionalities you need in your application. Before installing Social Stream, you have to decide which components you will need in your new social network.</p>
+    </section>
 
-           <pre>
-            rails new app
-          </pre>
-           
-          <p>Social Stream is an engine for <a href="http://rubyonrails.org/">Ruby on Rails</a>, the popular web development framework. This means you need to know Rails before developing with Social Stream. There is a nice guide on <a href="http://guides.rubyonrails.org/getting_started.html">Getting Started with Rails</a> that you should read first.</p>
-
-          <p>Once you have created your Rails application, you can add the Social Stream engine. In the first place, you have to decide which components you will use for your new social network.</p>
-
-
-        </section>
-
-
-        <section id="customize" class="row">
-          <header>
-            <h1>
-              3
-            </h1>
-            <h2>
-              Customize your application
-            </h2>
-          </header>
-
-          <h3>Quickly change the color and logo</h3>
-          -> bootstrap
-          -> change css
-
-          <h3>Views and frontpage</h3>
-          where are the views?
-          -deface
-          -overwrite
-
-          <h3>Customize models</h3>
-          - decorators
-          - overrite?
-        </section>
-
-        <section id="more" class="row">
-          <header>
-            <h1>
-                4
-            </h1>
-            <h2>
-              More
-            </h2>
-          </header>
-          - new activity object
-          - new actor
-          - routes
-        </section>
+    <section id="components" class="row components">
+      <div class="components">
+        <header>
+          <h1>
+            2
+          </h1>
+          <h2>
+            Social Stream's components
+          </h2>  
+        </header>
       </div>
+
+      <p>Social Stream is splitted into components to provide developers with the precise functionality you need for their social network website. Every component is packaged as a <a href="http://rubygems.org/">Ruby Gem</a> which is the standard packaging in Ruby. Ruby on Rails itself is also packaged as a gem.</p>
+
+      <p>Current available components in Social Stream are:</p>
+    
+      <ul class="nav nav-tabs" id="components-tab">
+        <li class="active"><a href="#base" data-toggle="tab">Base</a></li>
+        <li><a href="#documents" data-toggle="tab">Documents</a></li>
+        <li><a href="#events" data-toggle="tab">Events</a></li>
+        <li><a href="#linkser" data-toggle="tab">Linkser</a></li>
+        <li><a href="#presence" data-toggle="tab">Presence</a></li>
+        <li><a href="#ostatus" data-toggle="tab">OStatus</a></li>
+        <li><a href="#oauth2" data-toggle="tab">OAuth2 Server</a></li>
+      </ul>
+ 
+      <div class="tab-content">
+        <div class="tab-pane active" id="base">The <code>social_stream-base</code> gem provides applications with the core social network functionality. It supports users and groups, profile pages, activity streams, private messages and notifications, text posts and comments. Everything you need to start your social network</div>
+        <div class="tab-pane" id="documents">The <code>social_stream-documents</code> gem adds the core support for file uploads. Besides, it adds some nice features to special files, such as image thumbnails, audio and video with an HTML5 player.</div>
+        <div class="tab-pane" id="events"><code>social_stream-events</code> provides your social network with supports for scheduled events with a nice full-screen calendar.</div>
+        <div class="tab-pane" id="linkser"><code>social_stream-linkser</code> adds advanced management of links to other webpages. These are quite popular in leisure social networks where people share a lot of Youtube videos, for instance.</div>
+        <div class="tab-pane" id="presence">The <code>social_stream-presence</code> gem provides your social network with chat and videoconference support.</div>
+        <div class="tab-pane" id="ostatus"><code>social_stream-ostatus</code> lets your social network website federate with other social networks using the popular <a href="http://www.w3.org/community/ostatus/">OStatus</a> protocol</div>
+        <div class="tab-pane" id="oauth2">The <code>social_stream-oauth2_server</code> gem turns your site into an <a href="http://oauth.net/2/">OAuth2</a> provider, letting third party applications to access authentication and protected services from your social network</div>
+      </div>
+    </section>
+
+    <section id="install" class="row install-social-stream">
+      <header>
+        <h1>
+          3
+        </h1>
+        <h2>
+          Install Social Stream
+        </h2>
+      </header>
+
+       <pre>
+        rails new app
+      </pre>
+       
+      <p>Social Stream is an engine for <a href="http://rubyonrails.org/">Ruby on Rails</a>, the popular web development framework. This means you need to know Rails before developing with Social Stream. There is a nice guide on <a href="http://guides.rubyonrails.org/getting_started.html">Getting Started with Rails</a> that you should read first.</p>
+
+      <p>Once you have created your Rails application, you can add the Social Stream engine. In the first place, you have to decide which components you will use for your new social network.</p>
+
+
+    </section>
+
+
+    <section id="customize" class="row">
+      <header>
+        <h1>
+          3
+        </h1>
+        <h2>
+          Customize your application
+        </h2>
+      </header>
+
+      <h3>Quickly change the color and logo</h3>
+      -> bootstrap
+      -> change css
+
+      <h3>Views and frontpage</h3>
+      where are the views?
+      -deface
+      -overwrite
+
+      <h3>Customize models</h3>
+      - decorators
+      - overrite?
+    </section>
+
+    <section id="more" class="row">
+      <header>
+        <h1>
+            4
+        </h1>
+        <h2>
+          More
+        </h2>
+      </header>
+      - new activity object
+      - new actor
+      - routes
+    </section>
+  </div>
+</div>
