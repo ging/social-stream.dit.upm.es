@@ -36,9 +36,9 @@
 		// each step's bgcolor transition speed
 		bgColorSpeed: '1s',
 		// slideshow on / off
-		autoplay	: false,
+		autoplay	: true,
 		// time between transitions for the slideshow
-		interval	: 3500
+		interval	: 8500
     };
 	
 	$.JMSlideshow.prototype 	= {
