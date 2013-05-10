@@ -1,119 +1,121 @@
-<section id="jms-slideshow" class="jms-slideshow row">
-  <div class="step" data-color="color-1">
-    <div class="jms-content">
-      <h3>Build social network websites</h3>
-      <p>Social Stream is a <a href="http://en.wikipedia.org/wiki/Free_and_open-source_software">FLOSS</a> framework packaged as a <a href="http://rubyonrails.org/">Ruby on Rails</a> gem. It lets you develop distributed social networks websites rapidly and flexibly
-    </div>
-    <img src="/assets/logo.png" />
-  </div>
-  <div class="step" data-color="color-2" data-y="500" data-scale="0.4" data-rotate-x="30">
-    <div class="jms-content">
-      <h3>Modular and flexible</h3>
-      <p>Use only the components you need for your case. Customize appareance, functionality or create your own components</p>
-      
-    </div>
-    <img src="/assets/paraque.png" />
-  </div>
-  <div class="step" data-color="color-3" data-x="2000" data-z="3000" data-rotate="170">
-    <div class="jms-content">
-      <h3>For Rails developers</h3>
-      <p>Enjoy a community of practitioners that support its quality</p>
-      
-    </div>
-    <img src="/assets/developer-1.png" />
-  </div>
-  <div class="step" data-color="color-4" data-x="3000">
-    <div class="jms-content">
-      <h3>Start now!</h3>
-      <p>Create you own web application and start the customization in a few minutes!</p>
-      
-    </div>
-    <img src="/assets/now.jpg" />
-  </div>
-</section>
-      
-
-<section class="row">
-  <div class="span7 graphic">
-    <img src="/assets/infinito.png">
-    <a class="pull-right">Start using it</a>
-  </div>
-
-  <div class="span4 offset1 sidebar-rss">
-    <%= render partial: 'sidebar_rss' %>
-  </div>  
-</section> 
-
-<div id="myCarousel" class="carousel slide row">
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
-  <!-- Carousel items -->
-  <div class="carousel-inner">
-    <div class="active item">
-      <div class="span8 thumb-buid-ss">
-        <img src="/assets/adviseonly.png">
+<div id="home">
+  <section id="jms-slideshow" class="jms-slideshow row">
+    <div class="step" data-color="color-1">
+      <div class="jms-content">
+        <h3>Build social network websites</h3>
+        <p>Social Stream is a <a href="http://en.wikipedia.org/wiki/Free_and_open-source_software">FLOSS</a> framework packaged as a <a href="http://rubyonrails.org/">Ruby on Rails</a> gem. It lets you develop distributed social networks websites rapidly and flexibly
       </div>
-      <div class="span3 description">
-        <h2>
-          advise only
-        </h2>
-        <p>
-          The Advise Only Community is the Web 2.0 personal finance revolution, a place where users can share their investment portfolios.
-        </p>
-        <a href="https://www.adviseonly.com/" class="btn btn-primary">
-          see this website
-        </a>
-      </div>
+      <img src="/assets/logo.png" />
     </div>
-    <div class="item">
-      <div class="span8 thumb-buid-ss">
-        <img src="/assets/vish.png">
-      </div>
-      <div class="span3 description">
-        <h2>
-          ViSH
-        </h2>
-        <p>
-          ViSH is a social network for scientists, teachers and pupils. It contains the infrastructure to build, share and participate in virtual excursions.
-        </p>
-        <a href="http://www.vishub.org/" class="btn btn-primary">
-          see this website
-        </a>
-      </div>
-    </div>
-    <div class="item">
-      <div class="span8 thumb-buid-ss">
-        <img src="/assets/placedonia.png">
-      </div>
-      <div class="span3 description">
-        <h2>
-          placedonia
-        </h2>
-        <p>
-          Placedonia is a places-oriented social network where users can save the places they like. They can also review comments on places, both from strangers and from their own contacts.
-        </p>
-        <a href="http://m-places.dit.upm.es/" class="btn btn-primary">
-          see this website
-        </a>
-      </div>
-    </div>
-  </div>
-  <!-- Carousel nav -->
-  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-</div>
-
-
-
-
-    <script type="text/javascript">
-      $(function() {
-      
-        $( '#jms-slideshow' ).jmslideshow();
+    <div class="step" data-color="color-2" data-y="500" data-scale="0.4" data-rotate-x="30">
+      <div class="jms-content">
+        <h3>Modular and flexible</h3>
+        <p>Use only the components you need for your case. Customize appareance, functionality or create your own components</p>
         
-      });
-    </script>
+      </div>
+      <img src="/assets/paraque.png" />
+    </div>
+    <div class="step" data-color="color-3" data-x="2000" data-z="3000" data-rotate="170">
+      <div class="jms-content">
+        <h3>For Rails developers</h3>
+        <p>Enjoy a community of practitioners that support its quality</p>
+        
+      </div>
+      <img src="/assets/developer-1.png" />
+    </div>
+    <div class="step" data-color="color-4" data-x="3000">
+      <div class="jms-content">
+        <h3>Start now!</h3>
+        <p>Create you own web application and start the customization in a few minutes!</p>
+        
+      </div>
+      <img src="/assets/now.jpg" />
+    </div>
+  </section>
+        
 
+  <section class="row">
+    <div class="graphic">
+      <img src="/assets/infinito.png">
+      <a class="btn btn-primary pull-right">Start using it</a>
+    </div>
+
+    <div class="sidebar-rss">
+      <%= render partial: 'sidebar_rss' %>
+    </div>  
+  </section> 
+
+  <div id="myCarousel" class="carousel slide row">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+      <div class="active item">
+        <div class="thumb-buid-ss">
+          <img src="/assets/adviseonly.png">
+        </div>
+        <div class="description">
+          <h2>
+            advise only
+          </h2>
+          <p>
+            The Advise Only Community is the Web 2.0 personal finance revolution, a place where users can share their investment portfolios.
+          </p>
+          <a href="https://www.adviseonly.com/" class="btn btn-secundary">
+            see this website
+          </a>
+        </div>
+      </div>
+      <div class="item">
+        <div class="thumb-buid-ss">
+          <img src="/assets/vish.jpg">
+        </div>
+        <div class="description">
+          <h2>
+            ViSH
+          </h2>
+          <p>
+            ViSH is a social network for scientists, teachers and pupils. It contains the infrastructure to build, share and participate in virtual excursions.
+          </p>
+          <a href="http://www.vishub.org/" class="btn btn-secundary">
+            see this website
+          </a>
+        </div>
+      </div>
+      <div class="item">
+        <div class="thumb-buid-ss">
+          <img src="/assets/placedonia.png">
+        </div>
+        <div class="description">
+          <h2>
+            placedonia
+          </h2>
+          <p>
+            Placedonia is a places-oriented social network where users can save the places they like. They can also review comments on places, both from strangers and from their own contacts.
+          </p>
+          <a href="http://m-places.dit.upm.es/" class="btn btn-secundary">
+            see this website
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Carousel nav -->
+    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+  </div>
+
+
+
+
+      <script type="text/javascript">
+        $(function() {
+        
+          $( '#jms-slideshow' ).jmslideshow();
+          
+        });
+      </script>
+
+</div>

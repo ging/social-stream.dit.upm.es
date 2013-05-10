@@ -1,10 +1,16 @@
 .sidebar-rss {
   border-left: 1px solid #049CDB;
   padding-left: 11px;
-  width: 22%;
+  width: 40%;
   float: right;
 }
-
+.twitter-timeline{
+  height: 357px;
+  background-color: #f2f2f2;
+}
+.stream{
+  height: 256px !important;
+}
 .twtr-doc{
   width: auto !important;
 }
@@ -12,7 +18,9 @@
 .twtr-widget{
   font-family: "OpenSans", sans-serif !important;
 }
-
+.widget iframe{
+  width: 100% 
+}
 .widget widget_google_stats .widgettitle{
   margin-bottom: -10px;
 }

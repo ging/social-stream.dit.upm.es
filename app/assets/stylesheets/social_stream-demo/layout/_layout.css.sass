@@ -1,0 +1,32 @@
+#home,
+#comunity,
+#start
+  @include grid-core-span(12, $fluidGridColumnWidth, $fluidGridGutterWidth)
+  
+#comunity
+  .websites
+    width: 60%
+    float: left
+    margin-left: 20px
+  .sidebar-rss
+    @include grid-core-span(4, $fluidGridColumnWidth, $fluidGridGutterWidth)
+
+
+#start
+  .start-menu
+    @include grid-core-span(3, $fluidGridColumnWidth, $fluidGridGutterWidth)
+    float: left
+  .content
+    margin-left: 39.5%
+    section
+      margin-top: 50px
+      &:first-child
+        margin-top: 0px
+
+.item
+  .thumb-buid-ss
+    @include grid-core-span(8, $fluidGridColumnWidth, $fluidGridGutterWidth)
+    float: left
+  .description
+    @include grid-core-span(3, $fluidGridColumnWidth, $fluidGridGutterWidth)
+    float: left

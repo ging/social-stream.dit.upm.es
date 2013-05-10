@@ -1,0 +1,74 @@
+//
+// Responsive: Landscape phone to desktop/tablet
+// --------------------------------------------------
+
+
+@media (max-width: 767px)
+
+  #start
+    margin-top: 68px
+    .start-menu
+      @include grid-core-span(12, $fluidGridColumnWidth, $fluidGridGutterWidth)
+      float: left
+      padding-top: 12px
+      padding-bottom: 24px
+    .content
+      @include grid-core-span(12, $fluidGridColumnWidth, $fluidGridGutterWidth)
+      margin-left: 0 !important
+      padding-top: 136px
+
+
+  
+  .sidebar-rss
+    width: 100% !important
+    margin-left: 0px 
+    float: none !important
+    clear: both
+  
+
+
+  #comunity
+    .websites
+      @include grid-core-span(12, $fluidGridColumnWidth, $fluidGridGutterWidth)
+      margin-left: 0px
+
+
+  #home  
+    .graphic
+      width: 100% !important
+      img
+        width: 100%
+
+    #myCarousel
+      padding-top: 0px !important
+
+    .carousel 
+      img
+        margin-left: 0px !important
+        max-width: 100% !important
+  .item
+    .thumb-buid-ss
+      @include grid-core-span(12, $fluidGridColumnWidth, $fluidGridGutterWidth)
+      float: left
+      img
+        margin-left: 0 !important
+        max-width: 100% !important
+    .description
+      @include grid-core-span(12, $fluidGridColumnWidth, $fluidGridGutterWidth)
+      float: left
+
+      .description
+        a
+          float: right
+          margin-right: 32px
+
+// UP TO LANDSCAPE PHONE
+// ---------------------
+
+@media (max-width: 480px)
+
+  #home 
+    .graphic
+      @include grid-core-span(12, $fluidGridColumnWidth, $fluidGridGutterWidth)
+
+  
