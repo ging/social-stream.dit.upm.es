@@ -76,27 +76,33 @@
     </div>
   </header> <!-- end #inner-header -->
 
-  <div class="container-fluid">
-    <%= yield %>
+  <div class="wrapper container-fluid">
+    <div class="content_wrapper">
+      <div class="content_inner_wrapper">
+        <%= yield %>
+      </div>
+    </div>
   </div>
 
-  <footer class="footer">
-    <%= Time.now.year %> &copy; 
-    <a href="http://www.social-stream.dit.upm.es">
-      Social Stream
-    </a>
-    -
-    <a href="http://www.dit.upm.es/">
-      DIT
-    </a>
-    -
-    <a href="http://www.etsit.upm.es/">
-      ETSIT
-    </a>
-    -
-    <a href="http://www.upm.es/">
-      UPM
-    </a>
+  <footer class="footer_wrapper">
+    <div class="footer_inner_wrapper">
+      <%= Time.now.year %> &copy; 
+      <a href="http://www.social-stream.dit.upm.es">
+        Social Stream
+      </a>
+      -
+      <a href="http://www.dit.upm.es/">
+        DIT
+      </a>
+      -
+      <a href="http://www.etsit.upm.es/">
+        ETSIT
+      </a>
+      -
+      <a href="http://www.upm.es/">
+        UPM
+      </a>
+    </div>
   </footer>
 </body>
 </html>
