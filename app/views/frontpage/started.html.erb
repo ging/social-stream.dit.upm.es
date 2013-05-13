@@ -118,7 +118,7 @@ config.active_record.whitelist_attributes = false
 rake db:migrate
       </pre>
 
-      Since Social Stream depends on Devise, make sure you follow its setup instructions. Specifically, make sure you set the default URL options for your environments at <code>config/environments/*.rb</code> with something like:
+      Since Social Stream depends on <a href="https://github.com/plataformatec/devise">Devise</a>, make sure you follow its setup instructions. Specifically, make sure you set the default URL options for your environments at <code>config/environments/*.rb</code> with something like:
 
       <pre>
 config.action_mailer.default_url_options = { :host => 'localhost:3000' }
@@ -136,9 +136,14 @@ config.action_mailer.default_url_options = { :host => 'localhost:3000' }
         </h2>
       </header>
 
-      Now you have your own application up and running! The next step is customizing your application. Now you will learn how to quickly change its appareance
+      Now you have your own application up and running! The next step is customizing your application. Now you will learn how to quickly change its appareance. All the examples are demonstrated in the <a href="https://github.com/ging/social_stream-started">social_stream-started application</a>. You can download it and follow all the examples.
 
       <h3>Quickly change the color and logo</h3>
+
+      Social Stream is built in the top of <a href="http://twitter.github.io/bootstrap/">Bootstrap</a>, the popular and powerful framework front-end framework. You can use Bootstrap's variables to customize your social network! For example, you can easily change the color of your network. Just add the following to the top of <code>app/assets/stylesheets/social_stream.css.sass</code>
+      <pre>
+
+      </pre>
       -> bootstrap
       -> change css
 
