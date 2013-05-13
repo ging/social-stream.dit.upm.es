@@ -5,10 +5,42 @@
 
 @media (max-width: 767px)
 
-  
+  #start
+    padding: 0px
+    backgground: none !important
+    margin-top: -78px !important
+    .content
+      background: #fff
+      padding: 0 10px
+      margin-top: 100px
+    .start-menu
+      margin-top: 56px
+      margin-top: -148px
+      min-height: 205px
+      position: fixed
+      @include transition (margin-top 1s ease-in-out)
+      @include box-shadow (rgba(0, 0, 0, .15) 2px 1px 5px)
+      &:hover
+        margin-top: 30px
+        margin-bottom: 20px
+        a.down-submenu
+          display: none
+         
+      a.down-submenu
+        @include border-radius(70px)
+        @include size(32px, 32px)
+        @include opacity(50)
+        @include transition(display 1s)
+        float: right
+        background: #F2F2F2
+        display: visible
+        margin: 8px 9px 0 0
+        .icon-chevron-down
+          margin: 9px 10px
+       
+
 
 // UP TO LANDSCAPE PHONE
 // ---------------------
 
 @media (max-width: 480px)
-  
