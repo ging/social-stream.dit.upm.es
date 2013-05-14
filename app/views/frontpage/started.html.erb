@@ -141,19 +141,27 @@ config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
       Now you have your own application up and running! The next step is customizing your application. Now you will learn how to quickly change its appareance. All the examples are demonstrated in the <a href="https://github.com/ging/social_stream-started">social_stream-started application</a>. You can download it and follow all the examples.
 
-      <h3>Quickly change the color and logo</h3>
+      <h3>Quickly change the branding of your social network</h3>
 
+      <h4 id="change-color">Change the color using Bootstrap's variables</h4>
       Social Stream is built in the top of <a href="http://twitter.github.io/bootstrap/">Bootstrap</a>, the popular and powerful framework front-end framework. You can use Bootstrap's variables to customize your social network! For example, you can easily change the color of your social network. Just add the following to the top of <code>app/assets/stylesheets/social_stream.css.sass</code>
       <pre>
 
       </pre>
 
+      <h4 id="change-logo">Change the logo</h4>
       All the assets (images, javascripts, stylesheets) in your application have the highest priority over the ones in Social Stream. You can easily change the social network logo placing an image at <code>app/assets/images/header-logo-index.png</code>, which will be sent to the server before <a href="https://github.com/ging/social_stream/blob/master/base/app/assets/images/header-logo-index.png">Social Stream's header-logo-index.png</a>
 
-      <h3>Views and frontpage</h3>
-      where are the views?
-      -deface
-      -overwrite
+      <h3>Change the views</h3>
+      <em>Where are the views?</em> you will probably ask. Social Stream is <a href="http://guides.rubyonrails.org/engines.html#what-are-engines">Rails Engine</a>. Everything (images, javascripts, css, views, models, controllers, etc.) is packaged within the gem, in an obscure place in your computer. But do not desperate! You still have full control on them and can change them in two ways, with Deface or overwriting them.
+
+        <h4>Defacing views</h4>
+
+        Using <a href="https://github.com/spree/deface">Spree's Deface</a> to change the views is the recomended way to go. Why? Because you will benefit from bug fixes and new features in new versions of Social Stream. If you just overwrite the views, these changes won't be propagated to your final application.
+
+        <h4>Overwriting views</h4>
+
+        The other option is completely overwrite the view. This makes change when the view is significantly different from the one in Social Stream. To achieve this, just place a view with the same path in your application. As in the <a href="#change-logo">case of the assets explained above</a>, Rails will pick your application's view before Social Stream's
 
       <h3>Customize models</h3>
       - decorators
@@ -169,9 +177,11 @@ config.action_mailer.default_url_options = { :host => 'localhost:3000' }
           More
         </h2>
       </header>
-      - new activity object
-      - new actor
-      - routes
+      Need more? Try this:
+
+      <ul>
+        <li><a href="https://github.com/ging/social_stream/wiki/How-to-add-new-activity-objects">Adding new activity objects to the social network</a></li>
+        <li>Social Stream's <a href="https://github.com/ging/social_stream/wiki/Social-Stream-Base-database-schema">base database schema</a> and <a href="https://github.com/ging/social_stream/wiki/Social-Stream-database-schema">full database schema</a></li>
     </section>
   </div>
 </div>
