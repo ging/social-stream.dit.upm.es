@@ -3,7 +3,8 @@ SocialStreamDitUpmEs::Application.routes.draw do
   match "/started"   => "frontpage#started",   :as => :started
 
   # Redirect all wordpress content
-  match "/wp-content/:dir" => redirect("http://blog-social-stream.dit.upm.es/wp-content/%{dir}")
+  match "/wp-content/*dir" => redirect { |params| "http://blog-social-stream.dit.upm.es/wp-content/#{ params[:dir] }.#{ params[:format] }" }
+  match "/20*dir" => redirect{ |params| "http://blog-social-stream.dit.upm.es/wp-content/#{ params[:dir] }" }
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
