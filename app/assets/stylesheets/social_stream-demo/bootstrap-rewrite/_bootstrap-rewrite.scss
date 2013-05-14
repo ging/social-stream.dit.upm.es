@@ -54,18 +54,16 @@ header .navbar-inner ul.nav {
   background-color: #444 !important;
 }
 
-.nav-collapse .collapse{
-  display: block !important;
-}
 
 .nav-collapse .nav > li > a:hover{
   background-color: #555 !important;
 }
+
 .nav-collapse {
   display: block !important;
-  height: 0px !important;
-  float: left !important;
-  width: 50% !important;
+  height: 0px;
+  float: left;
+  width: 50%;
 }
 
 .nav-collapse .nav {
