@@ -15,7 +15,7 @@
   border-bottom: 4px solid #f9f9f9
   outline: none
   max-height: 139px
-  /*@include transition (background-color 1s linear)*/
+  @include transition (background-color 1s linear)
 
 
 .step
@@ -23,13 +23,13 @@
   height: 420px
   display: block
   background-color: #fff
-  /*@include transition (opacity 1s)*/
+  @include transition (opacity 1s)
   padding-left: 70px
   padding-right: 70px
 
 
 .step:not(.active)
-  /*@include opacity (0)*/
+  @include opacity (0)
 
 .jms-content
   margin: 0px 370px 0px 20px
@@ -82,18 +82,17 @@
     background: #ddd
     margin: 3px
     cursor: pointer
-    /*@include box-shadow(1px 1px 1px rgba(0,0,0,0.1) inset, 1px 1px 1px rgba(255,255,255,0.3))*/
-   
+    @include box-shadow(1px 1px 1px rgba(0,0,0,0.1) inset, 1px 1px 1px rgba(255,255,255,0.3))
 
-    .jms-dots-current:after
-      content: ''
-      width: 8px
-      height: 8px
-      position: absolute
-      top: 2px
-      left: 2px
-      /*@include border-radius (50%)*/
-      background: #049CDB
+  .jms-dots-current:after
+    content: ''
+    width: 8px
+    height: 8px
+    position: absolute
+    top: 2px
+    left: 2px
+    @include border-radius (50%)
+    background: #049CDB
 
 
 .jms-arrows
@@ -111,7 +110,6 @@
     width: 30px
     cursor: pointer
     z-index: 2000
-    /*@include box-shadow  (1px 1px 4px rgba(0, 0, 0, 0.1))*/
 
 
     .jms-arrows-prev
@@ -122,7 +120,7 @@
     .jms-arrows-next
       background: #fff url(/assets/arrow_right.png) no-repeat 50% 50%
       right: 0px
-      /*@include border-radius (2px)*/
+      @include border-radius (2px)
 
 /* Not supported style */
 .jms-wrapper
@@ -137,7 +135,7 @@
     .step
       display: none
       position: relative
-      /*@include opacity (1)*/
+      @include opacity (1)
       margin: 20px auto
 
       &:first-of-type
@@ -145,5 +143,5 @@
  
       &:not(.active) 
         a.jms-link
-          /*@include opacity (1)*/
+          @include opacity (1)
           margin-top: 40px
