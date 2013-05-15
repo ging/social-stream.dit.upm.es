@@ -10,8 +10,6 @@
   <link rel="shortcut icon" href="/images/favicon.ico"> 
   <meta name="robots" content="index, follow"/>
   <%= stylesheet_link_tag    "application" %>
-
-
   <%= javascript_include_tag "application" %>
 
   <noscript>
@@ -31,6 +29,21 @@
     }
     </style>
   </noscript>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-25541706-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
 </head>
 
 <body>
@@ -39,7 +52,7 @@
       <div class="navbar-inner">
         <div class="container-fluid nav-container">
           <nav role="navigation">
-            <a class="brand" id="logo" href="index.html">
+            <a class="brand" id="logo" href="/">
               <div class="logo">
               </div>
             </a>
