@@ -5,7 +5,10 @@ body {
   background-color:#f9f9f9 !important;
   text-rendering: optimizeLegibility !important;
 }
-
+.container-fluid {
+  padding-right: 10px;
+  padding-left: 10px;
+}
 .navbar .brand{
   padding: 0px !important;
   display: inline !important;
@@ -66,9 +69,6 @@ header .navbar-inner ul.nav {
   width: 50%;
 }
 
-.nav-collapse .nav {
-  width: 100% !important;
-}
 
 .container-fluid{
   margin: 0 auto !important;

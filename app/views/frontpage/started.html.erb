@@ -1,5 +1,5 @@
 <div id="start">
-  <div class="start-menu bs-docs-sidebar affix-top">
+  <div class="start-menu bs-docs-sidebar affix">
     <ul class="nav nav-list bs-docs-sidenav affix-top">
       <li><a href="#rails"><i class="icon-chevron-right"></i> 1. Get Started with Rails</a></li>
       <li><a href="#components"><i class="icon-chevron-right"></i> 2. Social Stream components</a></li>
@@ -74,58 +74,127 @@
           Install Social Stream
         </h2>
       </header>
-
       <p>After deciding which Social Stream's components you will use for your application, you can install Social Stream, just adding the gems to your application's <code>Gemfile</code></p>
 
-      <p>If you are using the full Social Stream suite, add <code>social_stream</code> to your <code>Gemfile</code></p>
+      <div class="row">
+        <div class="step">
+          <div class="option">
+            <img src="/assets/step-line-double-top.png">
+          </div>
+        </div>
 
-      <pre>
+        <div class="mid-case">
+          <p>If you are using the full Social Stream suite, add <code>social_stream</code> to your <code>Gemfile</code></p>
+
+          <pre>
 gem 'social_stream'
-      </pre>
+          </pre>
+        </div>
+      
 
-      <p>On the other hand, if you are using the <code>social_stream-documents</code> and <code>social_stream-events</code> components only, add:</p>
+        <div class="mid-case">
+          <p>On the other hand, if you are using the <code>social_stream-documents</code> and <code>social_stream-events</code> components only, add:</p>
 
-         <pre>
+             <pre>
 gem 'social_stream-documents'
 gem 'social_stream-events'
-        </pre>
+            </pre>
+        </div>
+      </div>
+  
 
-      Next, use <a href="http://gembundler.com/">Bundler</a>, the gem dependency manager to install all other gems required by your choice:
 
-      <pre>
+      <div class="row">
+        <div class="step">
+          <div class="option">
+            <img src="/assets/step-line-double-bottom.png">
+          </div>
+        </div>
+        <div class="option">
+          <div class="line-l">
+          </div>
+          <div class="line-r">
+          </div>
+        </div>
+        <div class="full-case">
+          Next, use <a href="http://gembundler.com/">Bundler</a>, the gem dependency manager to install all other gems required by your choice:
+          <pre>
 bundle
-      </pre>
+          </pre>
+        </div>
+      </div>
 
-      <p>The next step is running the generators for the gems. If you are installing the full Social Stream's suite:</p>
 
-      <pre>
+      <div class="row">
+        <div class="step">
+          <div class="option">
+            <img src="/assets/step-line-double-top.png">
+          </div>
+        </div>
+        <div class="mid-case">
+          <p>The next step is running the generators for the gems. If you are installing the full Social Stream's suite:</p>
+
+          <pre>
 rails generate social_stream:install
-      </pre>
+          </pre>
+        </div>
+      
+        <div class="mid-case">
+          <p>In the case you are installing certain components, you must run the generator per each one of them:</p>
 
-      <p>In the case you are installing certain components, you must run the generator per each one of them:</p>
+          <pre>
+  rails generate social_stream:documents:install
+  rails generate social_stream:events:install
+          </pre>
+        </div>
+      </div>
 
-      <pre>
-rails generate social_stream:documents:install
-rails generate social_stream:events:install
-      </pre>
 
-      Social Stream is not compatible with default mass attributes protection shipped with Rails 3.2.3, but uses the <a href="https://rubygems.org/gems/strong_parameters">strong_parameters gem</a> that will be the default in Rails 4. Set this in your <code>config/application.rb</code> before running the migration command:
+      <div class="row">
+        <div class="step">
+          <div class="option">
+            <img src="/assets/step-line-double-bottom.png">
+          </div>
+        </div>
+        <div class="mid-full">
+          Social Stream is not compatible with default mass attributes protection shipped with Rails 3.2.3, but uses the <a href="https://rubygems.org/gems/strong_parameters">strong_parameters gem</a> that will be the default in Rails 4. Set this in your <code>config/application.rb</code> before running the migration command:
 
-      <pre>
+          <pre>
 config.active_record.whitelist_attributes = false
-      </pre>
+          </pre>
+        </div>
+      </div>
 
-      Now migrate your database:
+      <div class="row">
+        <div class="step">
+          <div class="option">
+            <img src="/assets/step-line.png">
+          </div>
+        </div>
+        <div class="mid-full">
+          Now migrate your database:
 
-      <pre>
+          <pre>
 rake db:migrate
-      </pre>
+          </pre>
+        </div>
+      </div>
 
-      Since Social Stream depends on <a href="https://github.com/plataformatec/devise">Devise</a>, make sure you follow its setup instructions. Specifically, make sure you set the default URL options for your environments at <code>config/environments/*.rb</code> with something like:
 
-      <pre>
+      <div class="row">
+        <div class="step">
+          <div class="option">
+            <img src="/assets/step-line.png">
+          </div>
+        </div>
+        <div class="mid-full">
+          Since Social Stream depends on <a href="https://github.com/plataformatec/devise">Devise</a>, make sure you follow its setup instructions. Specifically, make sure you set the default URL options for your environments at <code>config/environments/*.rb</code> with something like:
+
+          <pre>
 config.action_mailer.default_url_options = { :host => 'localhost:3000' }
-      </pre>
+          </pre>
+        </div>
+      </div>
     </section>
 
 
