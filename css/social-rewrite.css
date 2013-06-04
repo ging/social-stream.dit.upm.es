@@ -1,0 +1,316 @@
+/*
+Theme Name: social-stream dit-upm edition
+Theme URI: http://social-stream.dit.upm.es
+Description: A simple responsive theme based on the Bootstrap framework. Includes multiple page templates, two different sidebars and a theme options panel.
+Version: 1.0
+Author: Crispín Avís
+Author URI: http://crispinh2o.ueuo.com
+Tags: black, white, one-column, two-columns, custom-background, custom-colors, custom-menu, full-width-template, theme-options, responsive
+License: GNU General Public License v2.0 & Apache License 2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/licenses/LICENSE-2.0
+*/
+
+/* appreciations: http://github.com/atd */
+/* For modern browsers */
+
+footer{
+  clear: both;
+  margin: 20px auto 0px;
+  padding: 0;
+  text-align: left;
+  bottom: 1px;
+  padding: 4px;
+  width: 86%;
+}
+form .input-prepend input{
+  width: 172px;
+}
+
+.widgettitle{
+  margin-left: 11px;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  width: 97%;
+  margin-bottom: 5px;
+
+}
+#content{
+  min-height: 650px;
+}
+
+.sidebar{
+  position: fixed;
+  margin-left: 670px;
+  margin-top: 24px;
+  width: 219px;
+  padding-top: 6px !important;
+  background-color: #F2F2F2;
+  border-radius: 6px
+}
+.sidebar li{
+  list-style-type: none !important;
+  font-size: 12px;
+  color: #888;
+  line-height: 19px;
+  margin-bottom: 4px;
+}
+.sidebar li a{
+  font-size: 14px;
+}
+.widget {
+    margin-bottom: 12px;
+  }
+
+.widget_search {
+    margin-left: 5px;
+    margin-bottom: -11px;
+  }
+  .widget_search input {
+    width: 103px !important;
+  }
+
+
+.single-post{
+  margin-top: 70px;
+
+}
+.commentlist{
+  margin-left: 0px;
+  background-color: #FFF;
+  border-radius: 10px;
+  padding: 14px;
+}
+.comment .avatar{
+  width: 80px;
+  margin-left: 10px;
+  float: left;
+}
+.comment .comment-text {
+width: 558px;
+float: left;
+margin-left: 22px !important;
+margin-top: 3px !important;
+}
+.edit-comment {
+float: right;
+margin-top: -40px;
+}
+.comment-reply-link {
+float: right;
+margin-top: -2px;
+}
+.input textarea{
+  width: 98%;
+  resize: none;
+  min-height: 80px;
+}
+.comments-logged-in-as{
+  text-align: right;
+  margin-right: 10px; 
+  margin-top:  2px;
+  width: 100%;
+  clear: both;
+}
+.form-actions{
+  margin-top: 0px;
+}
+ 
+.form-actions input{
+  float: right;
+}
+#comment{
+  width: 643px;
+  margin-left: 113px;
+  margin-bottom: 5px;
+}
+li p{
+  word-break: break-word;
+  width: 85%; 
+}
+#comment-form-title {
+font-size: 15px;
+line-height: 23px;
+}
+#comments{
+  margin-bottom: -7px;
+  width: 215px;
+  color: #888;
+  background-color: #FFF;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 4px;
+}
+.commentlist{
+border-top-right-radius: 7px;
+padding: 14px;
+border-bottom-left-radius: 7px;
+border-bottom-right-radius: 7px;
+}
+ol.commentlist li.bypostauthor {
+background-color: #F4F4F4;
+}
+.lead{
+  margin-bottom: 15px;
+}
+.post header{
+  font-size: 12px;
+}
+.post header .meta a{
+  font-size: 14px;
+}
+.post footer{
+  border-bottom: 1px solid #049CDB;
+  width: 100%;
+}
+.single-post {
+  margin-top:0px;
+}
+.single-post .sidebar{
+  display: none;
+}
+
+#cancel-comment-reply{
+  width: 51px;
+  float: left;
+  height: 24px;
+  margin-top: 1px;
+  margin-right: 6px;
+}
+#comment-form-title {
+width: 400px;
+float: left;
+margin-top: 1px;
+}
+li #comment {
+  width: 627px;
+ margin-left: 92px;
+}
+
+form ul{
+  clear: both;
+  margin-left: 113px !important;
+}
+
+form li{
+  width: 222px;
+  float: left;
+}
+
+.archive_title{
+  font-weight: lighter;
+  font-size: 19px;
+  line-height: 19px
+}
+
+/******** RESPONSIVE **********/
+@media (min-width: 1200px){
+  .container-fluid {
+    max-width: 1078px;
+  }
+  #main{
+    width: 68%;
+    margin-left: 2%;
+  }
+  .sidebar {
+    margin-left: 843px;
+    width: 265px;
+  }
+  .widget_search {
+    margin-left: 5px;
+  }
+  .widget_search input {
+    width: 149px !important;
+  }
+  form li{
+    width: 207px;
+    float: left;
+  }
+
+  form .input-prepend input{
+    width: 162px;
+  }
+  #comment{
+    width: 574px !important;
+    margin-left: 78px !important;
+ }
+}
+
+@media (min-width: 480px){
+  
+
+}
+
+@media (max-width: 767px){
+
+  .sidebar{
+    width: 92%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: 0;
+  }
+  .widget_search input {
+    width: 222px !important;
+  }
+  form ul{
+    margin-left: 0px !important;
+  }
+  form li{
+    width: 100%;
+  }
+
+  form .input-prepend input{
+    width: 88.4%;
+  }
+  #comment{
+  width: 100% !important;
+  margin-left: 0px !important;
+  }
+  .comment-text{
+    display: block;
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px){
+
+  .sidebar{
+    margin-left: 520px;
+    width: 25%;
+  }
+  .navbar-fixed-top {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .add-on{
+    padding: 4px 3px !important;
+  }
+  .widget_search input {
+    width: 28% !important;
+  }
+  .navbar-fixed-top, .navbar-fixed-bottom {
+    position: fixed;
+  }
+  .single-post {
+  margin-top: 46px;
+ }
+  #comment {
+    width: 454px !important;
+    margin-left: 86px !important;
+  }
+  form li{
+    width: 162px;
+    float: left;
+  }
+
+  form .input-prepend input{
+    width: 115px;
+  }
+  .comment .comment-text {
+    width: 375px;
+}
+}
